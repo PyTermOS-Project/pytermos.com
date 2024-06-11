@@ -132,3 +132,9 @@ button{
         width: 100%;
         padding: 10px;
     }
+.texter{
+    background-color: rgb(133, 164, 235);
+    height: 660px;
+    width: 800px;
+    border-radius: 20px;
+}
