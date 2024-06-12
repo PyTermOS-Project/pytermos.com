@@ -11,7 +11,17 @@ a{
     height: 50px;
     align-items: center;
     border: 3px dotted;
-    width: 470px;
+    width: 500px;
+}
+.divelements2{
+    display: flex;
+    justify-content: left;
+    background: rgb(92, 140, 251);
+    border-radius: 20px;
+    height: 50px;
+    align-items: center;
+    border: 3px dotted;
+    width: 120px;
 }
 body{
     font-family: "Poetsen One", sans-serif;
