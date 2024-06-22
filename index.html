@@ -1,131 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <title>PyTermOS</title>
-</head>
-<body>
-    <nav>
-        <div class="divelements">
-            <button class="docs"><a href="https://docs.pytermos.com/">Documentation</a></button>
-            <button class="docs"><a href="https://www.icloud.com/iclouddrive/069C_WVIjLR8Dou0oQZ5_f6Pg#PyTermOS_Versions">Downloads</a></button>
-            <button class="docs"><a href="https://github.com/MarkPavlenko/PyTermOS">GitHub Repo</a></button>
-            <button class="docs"><a href="sense.html">Sense of PyTermOS</a></button>
-        </div>
-        <div class="divelements2">
-            <h1>PyTermOS</h1>
-        </div>
-    </nav>
-    <div class="single">
-        <div class="container">
-            <div class="slider">
-                <img src="PyTermOS-Logo.png">
-            </div>
-    </div>
-    <div class="centerelements">
+  <head>
+    <title>PyTermOS Website</title>
+    <meta property="og:title" content="PyTermOS Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-    </div>
-    <br>
-    <div class="features1">
-        <h1>Fast.</h1>
-        <h4>PyTermOS is lightweight and is not slow. It's using the PyTerm terminal and it's fast because it's written in Python.</h4>
-        <div class="container">
-            <div class="slider">
-                <img src="tux.png">
-            </div>
-    </div>
-    <div class="features2">
-        <h1>Ay, what's your password? PyTermOS wouldn't say it.</h1>
-        <h5>PyTermOS is encrypts your data with special PyTerm processes. You can see them only if you're the Superuser that can be acessed via your password.</h5>
-        <div class="container2">
-            <div class="slider2">
-                <h5></h5>
-                <div class="safe">
-                    <h1>My password is...</h1>
-                </div>
-            </div>
-        <div class="features3">
-            <h1>PyTerm based, Python powered, prepared for learning.</h1>
-            <h4>PyTem was made for learning and preparing people for Bash and now we created PyTemOS, for preparing people to Linux.</h4>
-            <div class="container3">
-                <div class="slider3">
-                    <pre>
-                        PPPP   y   y  TTTTT  EEEE  RRRR  M   M
-                        P   P   y y     T    E     R   R MM MM
-                        PPPP     y      T    EEE   RRRR  M M M
-                        P        y      T    E     R  R  M   M
-                        P        y      T    EEEE  R   R M   M
-                                    Python Terminal For Starters.
-                            
-                    </pre>
-                </div>
-            <h1>    Come to the right side. Use PyTermOS.</h1>
-        </div>
-    </div>
-    <nav>
-        <div class="underapps">
-            <div id="mc_embed_shell">
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                  #mc_embed_signup{
-                    background:#72bbff;
-                    clear:left;
-                    font: 14px Helvetica,Arial,sans-serif;
-                    width: 600px;
-                  }
-          </style>
-          <div id="mc_embed_signup">
-              <form action="https://pytermos.us22.list-manage.com/subscribe/post?u=6612c5d04e25358b9d4f70748&amp;id=38f4ad4c98&amp;f_id=007cc5e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                  <div id="mc_embed_signup_scroll"><h2>Subscribe to the PyTermOS mailing list.</h2>
-                      <div class="indicates-required"><span class="asterisk"></span></div>
-                      <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk"></span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-                  <div id="mce-responses" class="clear foot">
-                      <div class="response" id="mce-error-response" style="display: none;"></div>
-                      <div class="response" id="mce-success-response" style="display: none;"></div>
-                  </div>
-              <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_6612c5d04e25358b9d4f70748_38f4ad4c98" tabindex="-1" value="">
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/pytermos-logo2.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <header class="home-header">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-no9b-1500h.png"
+                class="home-logo"
+              />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
               </div>
-                  <div class="optionalParent">
-                      <div class="clear foot">
-                          <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                          <p style="margin: 0px auto;"><a href="http://eepurl.com/iPy7HU" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                      </div>
-                  </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
               </div>
-          </form>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <div class="home-left">
+                  <div class="home-links1"></div>
+                  <span class="home-text03 Link">PyTermOS</span>
+                </div>
+                <div class="home-right">
+                  <div class="home-get-started">
+                    <span class="home-text04">Start using today.</span>
+                  </div>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="public/pastedimage-yxbd.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="home-container2">
+                <script defer="">
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </header>
+          <header class="home-content">
+            <h1 class="home-text05">
+              <span>Start learning to code,</span>
+              <br />
+              <span>with PyTermOS.</span>
+              <br />
+            </h1>
+            <p class="home-text10">
+              <span>
+                PyTermOS is a Linux distribution to start making people code.
+              </span>
+              <br />
+              <span>
+                Powered by PyTerm, an alternative to bash but for beginners.
+              </span>
+              <br />
+            </p>
+            <div class="home-get-started1">
+              <span class="home-text15">Start using today.</span>
+            </div>
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                alt="PyTermOS logo"
+                src="public/pytermos-logo-800h.png"
+                loading="lazy"
+                class="home-image"
+              />
+            </div>
           </div>
-          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-          
-        </div>
-        <div class="under">
-            <h5>it's all free and open-source!</h5>
-            <h1>Contact us at contact@pytermos.com</h1>
-            <!-- start feedwind code --> 
-            <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="167748/">
-            </script> 
-            <!-- end feedwind code -->
-        </div>
-    </nav>
-    <!-- Matomo -->
-<script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="https://pytermos.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src='https://cdn.matomo.cloud/pytermos.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-</body>
+        </section>
+        <section class="home-features">
+          <div class="home-title"></div>
+          <div class="home-cards">
+            <div class="home-container3">
+              <div class="home-schedule card">
+                <span class="home-text16">
+                  <span>PyTerm powered.</span>
+                  <br />
+                </span>
+                <span class="home-text19">
+                  Powered by living power, PyTerm. Built with Python to make you
+                  feel the power.
+                </span>
+              </div>
+              <div class="home-publish card">
+                <span class="home-text20">Built in Ukraine.</span>
+                <span class="home-text21">Made in Ukraine with love! 🥰</span>
+              </div>
+            </div>
+            <div class="home-container4">
+              <div class="home-analyze card">
+                <span class="home-text22">Any Raspberry Pi you have.</span>
+                <span class="home-text23">
+                  You can install PyTermOS on any RPi Hardware, from the classic
+                  to the latest.
+                </span>
+              </div>
+              <div class="home-get-leads card">
+                <span class="home-text24">Easy to install.</span>
+                <span class="home-text25">
+                  Installing never made so easy. That one plug-and-play
+                  experience.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-quote-container">
+          <div class="home-quote">
+            <span class="home-message">
+              As a developer, I recommend using PyTermOS before using a normal
+              Linux distribution.
+            </span>
+            <div class="home-author">
+              <img
+                alt="image"
+                src="public/download-200h.jpg"
+                class="home-avatar"
+              />
+              <span class="home-quote1">markdev - CEO of PyTermOS.</span>
+            </div>
+          </div>
+        </section>
+        <section class="home-banners"></section>
+        <section class="home-how-it-works">
+          <div class="home-centered-container">
+            <div class="home-heading">
+              <span class="home-text26 title">
+                Setting up a Linux has never been so easy.
+              </span>
+            </div>
+            <div class="home-category">
+              <div class="home-headng">
+                <span class="home-text27">Install</span>
+                <span class="home-text28">
+                  Install using Raspberry Pi Imager or Balena Etcher on your
+                  Micro SD Card.&nbsp;
+                </span>
+              </div>
+              <div class="home-container5">
+                <img
+                  alt="Raspberry Pi Imager"
+                  src="public/logos/unnamed-1200w.jpg"
+                  loading="eager"
+                  class="home-pasted-image"
+                />
+              </div>
+            </div>
+            <div class="home-row">
+              <div class="home-category1">
+                <div class="home-headng1">
+                  <span class="home-text29">Insert the Micro SD Card.</span>
+                  <span class="home-text30">
+                    Insert your Micro SD Card in your Raspberry Pi and continue
+                    the boot process.
+                  </span>
+                </div>
+              </div>
+              <div class="home-category2">
+                <div class="home-headng2">
+                  <span class="home-text31">Start using PyTermOS.</span>
+                  <span class="home-text32">
+                    Do what PyTermOS says and start using PyTermOS.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-pricing">
+          <div class="home-centered-container1">
+            <div class="home-heading1">
+              <span class="home-text33 title">You get much, for free.</span>
+              <span class="home-text34">
+                <span>
+                  PyTermOS is free and open-source. You can use PyTermOS without
+                  a credit card.&nbsp;
+                </span>
+                <br />
+                <span>
+                  If you paid for PyTermOS, please contact us at
+                  contact@pytermos.com.
+                </span>
+                <br />
+              </span>
+              <div class="home-selection">
+                <span class="home-text39">All you get:</span>
+              </div>
+            </div>
+            <div class="home-cards1">
+              <div class="home-card">
+                <span class="home-text40">PyTermOS.</span>
+                <span class="home-text41">
+                  Normal PyTermOS things you get as a user.
+                </span>
+                <span class="home-text42">What's included</span>
+                <div class="home-bullet-points">
+                  <div class="home-point">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon02"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text43">PyTermOS image.</span>
+                  </div>
+                  <div class="home-point01">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon04"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text44">PyTerm interface built in.</span>
+                  </div>
+                </div>
+                <div class="home-container6"></div>
+              </div>
+              <div class="home-card1">
+                <span class="home-text45">Contact Support.</span>
+                <span class="home-text46">
+                  <span>Contact Support via email, no waiting line.</span>
+                  <br />
+                </span>
+                <div class="home-get-started2 template-button">
+                  <span class="home-text49">
+                    <span>Contact us now.</span>
+                    <br />
+                  </span>
+                </div>
+                <span class="home-text52">What's included</span>
+                <div class="home-bullet-points1">
+                  <div class="home-point02">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon06"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text53">Everyday support.</span>
+                  </div>
+                  <div class="home-point03">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon08"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text54">No waiting line.</span>
+                  </div>
+                  <div class="home-point04">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon10"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text55">Fast response.</span>
+                  </div>
+                  <div class="home-point05">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon12"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text56">
+                      Help in every PyTermOS sphere.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card2">
+                <span class="home-text57">Beta and stable versions.</span>
+                <span class="home-text58">
+                  You can access Beta and Stable versions of PyTermOS for free.
+                </span>
+                <span class="home-text59">What's included</span>
+                <div class="home-bullet-points2">
+                  <div class="home-point06">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon14"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text60">Beta versions for anyone.</span>
+                  </div>
+                  <div class="home-point07">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon16"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text61">Stable versions for anyone.</span>
+                  </div>
+                  <div class="home-point08">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon18"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text62">
+                      Contributions can make anyone.
+                    </span>
+                  </div>
+                  <div class="home-point09">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon20"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text63">
+                      Tested, even if not you can become the one that tests
+                      betas.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-action-bar">
+          <div class="home-action">
+            <div class="home-heading2">
+              <span class="home-text64 title">
+                Start with PyTermOS today, now!
+              </span>
+              <span class="home-text65">For free, anytime you want.</span>
+              <div class="home-get-started3 template-button">
+                <span class="home-text66">Start now.</span>
+              </div>
+            </div>
+            <div class="home-images"></div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-top">
+            <div class="home-left1">
+              <div class="home-contact">
+                <span class="home-text67">Contact</span>
+                <a
+                  href="mailto:use@active-app.com?subject=Support"
+                  class="home-link"
+                >
+                  contact@pytermos.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-bottom">
+            <span class="home-text68">Copyright © 2024 PyTermOS-Project</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
