@@ -61,6 +61,15 @@
          box-shadow:0 -100vh 0 100vh #5128f5;//magic
        }
     </style>
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -76,6 +85,11 @@
                 src="public/pastedimage-no9b-1500h.png"
                 class="home-logo"
               />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
               <div id="close-mobile-menu" class="home-close-mobile-menu">
                 <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
                   <path
@@ -88,21 +102,30 @@
               <nav class="home-centered">
                 <div class="home-left">
                   <div class="home-links1"></div>
-                  <span class="home-text03 Link">PyTermOS</span>
+                  <a href="index.html" class="home-navlink Link">PyTermOS</a>
                 </div>
-                <span class="home-text02 Link"><a href="https://github.com/PyTermOS-Project/PyTermOS">GitHub Repository</a></span>
-                <span class="home-text01 Link"><a href="https://docs.pytermos.com">Documentation</a></span>
+                <a
+                  href="https://github.com/PyTermOS-Project/PyTermOS"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link"
+                >
+                  <span>GitHub Repository</span>
+                  <br />
+                </a>
+                <a
+                  href="https://docs.pytermos.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link1"
+                >
+                  Documentation
+                </a>
                 <div class="home-right">
                   <div class="home-get-started">
-                    <span class="home-text04">Start using today.</span>
+                    <span class="home-text05">Start using today.</span>
                   </div>
-                  <div id="open-mobile-menu" class="home-burger-menu">
-                    <img
-                      alt="pastedImage"
-                      src="public/pastedimage-yxbd.svg"
-                      class="home-mobile-menu-button"
-                    />
-                  </div>
+                  <div id="open-mobile-menu" class="home-burger-menu"></div>
                 </div>
               </nav>
             </div>
@@ -134,13 +157,13 @@
             </div>
           </header>
           <header class="home-content">
-            <h1 class="home-text05">
+            <h1 class="home-text06">
               <span>Start learning to code,</span>
               <br />
               <span>with PyTermOS.</span>
               <br />
             </h1>
-            <p class="home-text10">
+            <p class="home-text11">
               <span>
                 PyTermOS is a Linux distribution to start making people code.
               </span>
@@ -151,7 +174,7 @@
               <br />
             </p>
             <div class="home-get-started1">
-              <span class="home-text15">Start using today.</span>
+              <span class="home-text16">Start using today.</span>
             </div>
           </header>
           <div class="home-dashboard-preview">
@@ -170,31 +193,31 @@
           <div class="home-cards">
             <div class="home-container3">
               <div class="home-schedule card">
-                <span class="home-text16">
+                <span class="home-text17">
                   <span>PyTerm powered.</span>
                   <br />
                 </span>
-                <span class="home-text19">
+                <span class="home-text20">
                   Powered by living power, PyTerm. Built with Python to make you
                   feel the power.
                 </span>
               </div>
               <div class="home-publish card">
-                <span class="home-text20">Built in Ukraine.</span>
-                <span class="home-text21">Made in Ukraine with love! 🥰</span>
+                <span class="home-text21">Built in Ukraine.</span>
+                <span class="home-text22">Made in Ukraine with love! 🥰</span>
               </div>
             </div>
             <div class="home-container4">
               <div class="home-analyze card">
-                <span class="home-text22">Any Raspberry Pi you have.</span>
-                <span class="home-text23">
+                <span class="home-text23">Any Raspberry Pi you have.</span>
+                <span class="home-text24">
                   You can install PyTermOS on any RPi Hardware, from the classic
                   to the latest.
                 </span>
               </div>
               <div class="home-get-leads card">
-                <span class="home-text24">Easy to install.</span>
-                <span class="home-text25">
+                <span class="home-text25">Easy to install.</span>
+                <span class="home-text26">
                   Installing never made so easy. That one plug-and-play
                   experience.
                 </span>
@@ -222,14 +245,14 @@
         <section class="home-how-it-works">
           <div class="home-centered-container">
             <div class="home-heading">
-              <span class="home-text26 title">
+              <span class="home-text27 title">
                 Setting up a Linux has never been so easy.
               </span>
             </div>
             <div class="home-category">
               <div class="home-headng">
-                <span class="home-text27">Install</span>
-                <span class="home-text28">
+                <span class="home-text28">Install</span>
+                <span class="home-text29">
                   Install using Raspberry Pi Imager or Balena Etcher on your
                   Micro SD Card.&nbsp;
                 </span>
@@ -243,23 +266,23 @@
                 />
               </div>
             </div>
-            <div class="home-row">
-              <div class="home-category1">
-                <div class="home-headng1">
-                  <span class="home-text29">Insert the Micro SD Card.</span>
-                  <span class="home-text30">
-                    Insert your Micro SD Card in your Raspberry Pi and continue
-                    the boot process.
-                  </span>
-                </div>
+          </div>
+          <div class="home-row">
+            <div class="home-category1">
+              <div class="home-headng1">
+                <span class="home-text30">Insert the Micro SD Card.</span>
+                <span class="home-text31">
+                  Insert your Micro SD Card in your Raspberry Pi and continue
+                  the boot process.
+                </span>
               </div>
-              <div class="home-category2">
-                <div class="home-headng2">
-                  <span class="home-text31">Start using PyTermOS.</span>
-                  <span class="home-text32">
-                    Do what PyTermOS says and start using PyTermOS.
-                  </span>
-                </div>
+            </div>
+            <div class="home-category2">
+              <div class="home-headng2">
+                <span class="home-text32">Start using PyTermOS.</span>
+                <span class="home-text33">
+                  Do what PyTermOS says and start using PyTermOS.
+                </span>
               </div>
             </div>
           </div>
@@ -267,8 +290,8 @@
         <section class="home-pricing">
           <div class="home-centered-container1">
             <div class="home-heading1">
-              <span class="home-text33 title">You get much, for free.</span>
-              <span class="home-text34">
+              <span class="home-text34 title">You get much, for free.</span>
+              <span class="home-text35">
                 <span>
                   PyTermOS is free and open-source. You can use PyTermOS without
                   a credit card.&nbsp;
@@ -281,16 +304,16 @@
                 <br />
               </span>
               <div class="home-selection">
-                <span class="home-text39">All you get:</span>
+                <span class="home-text40">All you get:</span>
               </div>
             </div>
             <div class="home-cards1">
               <div class="home-card">
-                <span class="home-text40">PyTermOS.</span>
-                <span class="home-text41">
+                <span class="home-text41">PyTermOS.</span>
+                <span class="home-text42">
                   Normal PyTermOS things you get as a user.
                 </span>
-                <span class="home-text42">What's included</span>
+                <span class="home-text43">What's included</span>
                 <div class="home-bullet-points">
                   <div class="home-point">
                     <svg
@@ -301,7 +324,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text43">PyTermOS image.</span>
+                    <span class="home-text44">PyTermOS image.</span>
                   </div>
                   <div class="home-point01">
                     <svg
@@ -312,24 +335,29 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text44">PyTerm interface built in.</span>
+                    <span class="home-text45">PyTerm interface built in.</span>
                   </div>
                 </div>
                 <div class="home-container6"></div>
               </div>
               <div class="home-card1">
-                <span class="home-text45">Contact Support.</span>
-                <span class="home-text46">
+                <span class="home-text46">Contact Support.</span>
+                <span class="home-text47">
                   <span>Contact Support via email, no waiting line.</span>
                   <br />
                 </span>
-                <div class="home-get-started2 template-button">
-                  <span class="home-text49">
-                    <span>Contact us now.</span>
-                    <br />
-                  </span>
-                </div>
-                <span class="home-text52">What's included</span>
+                <a
+                  href="mailto:contact@pytermos.com?subject=Need help with PyTermOS."
+                  class="home-link2"
+                >
+                  <div class="home-get-started2 template-button">
+                    <span class="home-text50">
+                      <span>Contact us now.</span>
+                      <br />
+                    </span>
+                  </div>
+                </a>
+                <span class="home-text53">What's included</span>
                 <div class="home-bullet-points1">
                   <div class="home-point02">
                     <svg
@@ -340,7 +368,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text53">Everyday support.</span>
+                    <span class="home-text54">Everyday support.</span>
                   </div>
                   <div class="home-point03">
                     <svg
@@ -351,7 +379,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text54">No waiting line.</span>
+                    <span class="home-text55">No waiting line.</span>
                   </div>
                   <div class="home-point04">
                     <svg
@@ -362,7 +390,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text55">Fast response.</span>
+                    <span class="home-text56">Fast response.</span>
                   </div>
                   <div class="home-point05">
                     <svg
@@ -373,18 +401,18 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text56">
+                    <span class="home-text57">
                       Help in every PyTermOS sphere.
                     </span>
                   </div>
                 </div>
               </div>
               <div class="home-card2">
-                <span class="home-text57">Beta and stable versions.</span>
-                <span class="home-text58">
+                <span class="home-text58">Beta and stable versions.</span>
+                <span class="home-text59">
                   You can access Beta and Stable versions of PyTermOS for free.
                 </span>
-                <span class="home-text59">What's included</span>
+                <span class="home-text60">What's included</span>
                 <div class="home-bullet-points2">
                   <div class="home-point06">
                     <svg
@@ -395,7 +423,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text60">Beta versions for anyone.</span>
+                    <span class="home-text61">Beta versions for anyone.</span>
                   </div>
                   <div class="home-point07">
                     <svg
@@ -406,7 +434,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text61">Stable versions for anyone.</span>
+                    <span class="home-text62">Stable versions for anyone.</span>
                   </div>
                   <div class="home-point08">
                     <svg
@@ -417,7 +445,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text62">
+                    <span class="home-text63">
                       Contributions can make anyone.
                     </span>
                   </div>
@@ -430,7 +458,7 @@
                         d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
                       ></path>
                     </svg>
-                    <span class="home-text63">
+                    <span class="home-text64">
                       Tested, even if not you can become the one that tests
                       betas.
                     </span>
@@ -440,39 +468,48 @@
             </div>
           </div>
         </section>
-        <section class="home-action-bar">
-          <div class="home-action">
-            <div class="home-heading2">
-              <span class="home-text64 title">
-                Start with PyTermOS today, now!
-              </span>
-              <span class="home-text65">For free, anytime you want.</span>
-              <div class="home-get-started3 template-button">
-                <span class="home-text66">Start now.</span>
-              </div>
-            </div>
-            <div class="home-images"></div>
-          </div>
-        </section>
         <footer class="home-footer">
           <div class="home-top">
             <div class="home-left1">
               <div class="home-contact">
-                <span class="home-text67">Contact</span>
+                <span class="home-text65">Contact</span>
                 <a
                   href="mailto:use@active-app.com?subject=Support"
-                  class="home-link"
+                  class="home-link3"
                 >
                   contact@pytermos.com
                 </a>
               </div>
             </div>
+            <div>
+              <div class="home-container8">
+                <!-- Matomo -->
+                <script>
+                  var _paq = window._paq = window._paq || [];
+                  /* tracker methods like 'setCustomDimension' should be called before 'trackPageView' */
+                  _paq.push(['trackPageView']);
+                  _paq.push(['enableLinkTracking']);
+                  (function() {
+                    var u='https://pytermos.matomo.cloud/';
+                    _paq.push(['setTrackerUrl', u+'matomo.php']);
+                    _paq.push(['setSiteId', '1']);
+                    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                    g.async=true; g.src='https://cdn.matomo.cloud/pytermos.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+                  })();
+                </script>
+                <!-- End Matomo Code -->
+              </div>
+            </div>
           </div>
           <div class="home-bottom">
-            <span class="home-text68">Copyright © 2024 PyTermOS-Project</span>
+            <span class="home-text66">Copyright © 2024 PyTermOS-Project</span>
           </div>
         </footer>
       </div>
     </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>

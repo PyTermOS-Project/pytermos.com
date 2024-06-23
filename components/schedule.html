@@ -60,6 +60,15 @@
          box-shadow:0 -100vh 0 100vh #5128f5;//magic
        }
     </style>
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="../style.css" />
@@ -81,5 +90,9 @@
         <div>Placeholder for widget timer</div>
       </div>
     </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
