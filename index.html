@@ -7,16 +7,25 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <script>
+      const auth0 = new auth0.WebAuth({
+        domain: 'dev-6khvis8rcqbs30ff.us.auth0.com',
+        clientID: 'zCBNwhJZC2qTvtHUQ7K2X7hIMhrHuwgZ',
+        redirectUri: 'https://pytermos.com/callback.html',
+        responseType: 'token id_token',
+        scope: 'openid profile'
+      });
+
       // Check if tokens are present in localStorage to determine authentication status
       const accessToken = localStorage.getItem('accessToken');
       const idToken = localStorage.getItem('idToken');
 
       if (accessToken && idToken) {
-          // User is authenticated, display user info or perform authenticated actions
-          document.getElementById('user-info').innerHTML = 'Authenticated User';
+        // User is authenticated, display user info or perform authenticated actions
+        // Assuming you have an element with id 'user-info'
+        document.getElementById('user-info').innerHTML = 'Authenticated User';
       } else {
-          // User is not authenticated, handle accordingly (e.g., redirect to login)
-          window.location.href = 'https://pytermos.com/callback.html';
+        // User is not authenticated, redirect to Auth0 login page
+        auth0.authorize();
       }
   </script>
     <style data-tag="reset-style-sheet">
