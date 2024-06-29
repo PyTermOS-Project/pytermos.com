@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callback URL</title>
-    <script src="https://cdn.auth0.com/js/auth0/9.16.2/auth0.min.js"></script>
-    <script>
-      const auth0 = new auth0.WebAuth({
-        domain: 'dev-6khvis8rcqbs30ff.us.auth0.com',
-        clientID: 'zCBNwhJZC2qTvtHUQ7K2X7hIMhrHuwgZ',
-        redirectUri: 'https://pytermos.com/callback.html',
-        responseType: 'token id_token',
-      });
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback URL</title>
+  <script src="https://cdn.auth0.com/js/auth0/9.16.2/auth0.min.js"></script>
+  <script>
+    const auth0 = new auth0.WebAuth({
+      domain: 'dev-6khvis8rcqbs30ff.us.auth0.com',
+      clientID: 'zCBNwhJZC2qTvtHUQ7K2X7hIMhrHuwgZ',
+      redirectUri: 'https://pytermos.com/callback.html',
+      responseType: 'token id_token'
+    });
 
-      auth0.parseHash((err, authResult) => {
-        if (authResult && authResult.accessToken && authResult.idToken) {
-          // Handle successful authentication
-          console.log('Authentication successful!');
-          // Store tokens in localStorage
-          localStorage.setItem('accessToken', authResult.accessToken);
-          localStorage.setItem('idToken', authResult.idToken);
-          // Redirect to the main page
-          window.location.href = 'https://pytermos.com';
-        } else if (err) {
-          // Handle errors
-          console.error('Authentication error:', err);
-        }
-      });
-    </script>
+    auth0.parseHash((err, authResult) => {
+      if (authResult && authResult.accessToken && authResult.idToken) {
+        // Handle successful authentication
+        console.log('Authentication successful!');
+        // Store tokens in localStorage
+        localStorage.setItem('accessToken', authResult.accessToken);
+        localStorage.setItem('idToken', authResult.idToken);
+        // Redirect to the main page
+        window.location.href = 'https://pytermos.com';
+      } else if (err) {
+        // Handle errors
+        console.error('Authentication error:', err);
+      }
+    });
+  </script>
 </head>
 <body>
-    <h1>Authenticating...</h1>
+  <h1>Authenticating...</h1>
 </body>
 </html>
