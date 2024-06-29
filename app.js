@@ -1,7 +1,7 @@
 const auth0 = new auth0.WebAuth({
-    domain: 'your-auth0-domain',
-    clientID: 'your-auth0-client-id',
-    redirectUri: 'https://yourusername.github.io/callback',
+    domain: 'dev-6khvis8rcqbs30ff.us.auth0.com',
+    clientID: 'zCBNwhJZC2qTvtHUQ7K2X7hIMhrHuwgZ',
+    redirectUri: 'https://pytermos.com/callback.html',
     responseType: 'token id_token',
     scope: 'openid profile'
 });
